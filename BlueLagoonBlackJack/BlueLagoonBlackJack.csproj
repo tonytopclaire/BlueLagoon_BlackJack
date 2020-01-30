@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4066F43A-9697-4C45-8858-AF62951CFB2C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BlueLagoonBlackJack</RootNamespace>
+    <AssemblyName>BlueLagoonBlackJack</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Card.cs" />
+    <Compile Include="Deck.cs" />
+    <Compile Include="frmHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHelp.designer.cs">
+      <DependentUpon>frmHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIntro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIntro.designer.cs">
+      <DependentUpon>frmIntro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rank.cs" />
+    <Compile Include="Suit.cs" />
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHelp.resx">
+      <DependentUpon>frmHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIntro.resx">
+      <DependentUpon>frmIntro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photos.com.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flickr.com.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\004.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\005.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\006.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\007.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\008.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\009.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\010.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\011.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\012.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\013.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\101.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\102.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\103.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\104.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\105.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\106.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\107.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\108.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\109.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\112.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\113.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\201.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\202.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\203.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\204.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\205.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\206.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\207.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\208.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\209.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\210.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\211.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\212.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\213.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\301.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\302.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\303.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\304.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\305.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\306.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\307.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\308.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\309.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\310.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\311.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\312.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\313.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redleft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redright.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redvert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClubAce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClubEight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClubFive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClubFour.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClubJack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClubKing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClubNine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClubQueen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClubSeven.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClubSix.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClubTen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClubThree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClubTwo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DiamondAce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DiamondEight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DiamondFive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DiamondFour.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DiamondJack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DiamondKing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DiamondNine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DiamondQueen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DiamondSeven.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DiamondSix.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DiamondTen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DiamondThree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DiamondTwo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeartAce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeartEight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeartFive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeartFour.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeartJack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeartKing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeartQueen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeartSeven.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeartSix.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeartTen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeartThree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeartTwo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jokerb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpadeAce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpadeEight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpadeFive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpadeFour.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpadeJack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpadeKing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpadeNine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpadeQueen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpadeSeven.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpadeSix.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpadeTen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpadeThree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpadeTwo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg01.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
